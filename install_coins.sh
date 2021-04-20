@@ -24,3 +24,10 @@ kubectl expose deployment hasher --port 80
 kubectl expose deploy/webui --type=NodePort --port=80
 kubectl get svc
 
+
+ # Setup Kubernetes Dashboard
+
+kubectl apply -f ~/container.training/k8s/dashboard-insecure.yaml
+kubectl apply -f ~/container.training/k8s/socat.yaml
+kubectl get svc
+
